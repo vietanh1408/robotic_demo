@@ -1,0 +1,16 @@
+@font-face {
+    font-family: UTMAvo;
+    src: url('../fonts/UTMAvo.ttf');
+}
+@font-face {
+    font-family: UTMAvoBold;
+    src: url('../fonts/UTMAvoBold.ttf');
+}
+@font-face {
+    font-family: UTMAvoBold_Italic;
+    src: url('../fonts/UTMAvoBold_Italic.ttf');
+}
+@font-face {
+    font-family: UTMAvoItalic;
+    src: url('../fonts/UTMAvoItalic.ttf');
+}

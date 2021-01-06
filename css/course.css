@@ -1,0 +1,79 @@
+
+.courses-page{
+    background-color: #f6f6f6;
+    padding: 3.3rem 0;
+}
+
+.course-content{
+    background-color: #f0f0f0;
+}
+
+.course h2{
+    color: #00b3cb;
+    font-family: 'UTMAvoBold';
+    font-size: 1.8rem;
+    margin: 0;
+    padding-bottom: 0.4rem;
+    display: inline-block;
+    border-bottom: 3px solid #00b3cb;
+    position: relative;
+}
+
+.course h2::after{
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 40px;
+    width: 10px;
+    height: 3px;
+    background-color: white;
+}
+
+.course p{
+    font-size: 0.9rem;
+    margin: 1rem 0 3rem 0;
+}
+
+.card-title{
+    font-size: 0.9rem;
+    font-weight: 700;
+    min-height: 69px;
+    line-height: 1.3rem;
+}
+
+.card-link {
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 700;
+}
+.card-link img{
+    margin-left: 0.5rem;
+}
+.card-link.p {
+    font-weight: 500;
+    color: black;
+}
+.card-body{
+    height: 100%;
+}
+
+.card{
+    min-height: 358px;
+}
+.card-up img{
+    width: 100%;
+    max-height: 187px;
+}
+
+.btn-extend button{
+    margin-top: 4rem;
+    width: 235px;
+    height: 60px;
+    background-color: #00b3cb;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #007ea2;
+    color: white;
+    font-weight: 700;
+}

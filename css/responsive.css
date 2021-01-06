@@ -1,0 +1,279 @@
+/* tablets vs mobile */
+@media (max-width: 991.98px) {
+    .social{
+        display: block;
+    }
+    .item{
+        border: none;
+    }
+
+    .first{
+        padding: 2rem 0 !important;
+    }
+    
+    .first__content--img--bg{
+        padding: 0 !important;
+        background-color: white !important;
+        margin-left: 0 !important;
+    }
+    .second{
+        padding: 0 !important;
+    }
+    .second__image{
+        display: none;
+    }
+
+    .second__heading{
+        height: 200px !important;
+    }
+    .second__heading::after{
+        display: none !important;
+    }
+    .second__heading h2::before{
+        width: 700px !important;
+        left: -280px !important;
+    }
+    .second__heading h3::before{
+        left: -215px !important;
+    }
+}
+
+/* mobile */
+@media (max-width: 575.98px) {
+    #banner h1 {
+        font-size: 1.5rem !important;
+    }
+    .banner-content{
+        top: 50px;
+        left: 40px;
+    }
+    .banner-content h3,
+    .banner-content p{
+        font-size: 0.8em;
+    }
+    .banner-content .btn{
+        width: 120px;
+        height: 30px;
+        font-size: 0.8em;
+    }
+    #introduction{
+        height: 870px;
+        background-size: cover;
+    }
+
+    .introduce-page h2{
+        font-size: 1.35rem !important;
+    }
+    .introduction-content{
+        top: 20px;
+        left: 30px;
+    }
+    .introduction-content h2{
+        font-size: 1.5rem;
+    }
+    #education {
+        padding-top: 1.5rem;
+    }
+    .paragraph{
+        width: 95.5%;
+    }
+    .paragraph p{
+        font-size: 0.7rem;
+    }
+    .introduction-content .btn {
+        margin-top: 20px;
+        width: 180px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+    .course-content p{
+        font-size: 0.7rem;
+    }
+    .content .content-h3:after {
+        width: 120px;
+    }
+    .content .content-h3 {
+        font-size: 1rem;
+        font-family: 'UTMAvo';
+    }
+    .content h2{
+        font-size: 1.5rem;
+    }
+    .product-student-heading{
+        display: block;
+        margin-left: -15px;
+    }
+    .product-student-heading h2{
+        font-size: 1.3rem;
+    }
+    #news{
+        padding: 25px 0 10px 0;
+    }
+    .first{
+        padding-bottom: 0 !important;
+    }
+    .first h3{
+        font-size: 0.9rem !important;
+    }
+    .first__content--heading{
+        font-size: 0.8rem !important;
+    }
+    .first__content{
+        padding: 0 1rem !important;
+    }
+    .first__content--img{
+        padding: 0 !important;
+        height: 255px !important;
+        background-color: white !important;
+    }
+    .first__content--img--bg{
+        padding: 0 !important;
+        background-color: white !important;
+        margin-left: 0 !important;
+    }
+    .first__content--img--bg img {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        
+    }
+
+    .third__content h2{
+        font-size: 1.3rem !important;
+    }
+
+    .third{
+        padding-bottom: 0 !important;
+    }
+    .third__content h2{
+        font-size: 1.75rem !important;
+    }
+    .fourth {
+        padding-top: 0 !important;
+    }
+    .fourth__culture{
+        padding: 2rem 2rem !important;
+    }
+    .fourth__culture--paragraph{
+        font-size: 0.9rem;
+    }
+    .fourth__culture ul li{
+        font-size: 0.9rem;
+    }
+    .courses-page{
+        padding: 1rem 0 !important;
+    }
+    .course h2{
+        font-size: 1rem !important;
+    }
+    .course p{
+        font-size: 0.7rem !important;
+    }
+}
+/* tabblet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .banner-content{
+        top: 100px;
+        left: 75px;
+    }
+    .banner-content h3,
+    .banner-content p{
+        font-size: 2em;
+    }
+    .introduction-content{
+        top: 20px;
+        left: 30px;
+    }
+    .introduction-content h2{
+        font-size: 1.5rem;
+    }
+    .paragraph{
+        width: 95.5%;
+    }
+    .paragraph p{
+        font-size: 0.7rem;
+    }
+    .courses-education{
+        display: flex;
+    }
+    .course-img img{
+        width: 208px;
+        height: 180px;  
+    }
+    .courses-education{
+        width: 100%;
+        height: 180px;
+    }
+    .course-content{
+        flex: 1;
+    }
+    .course-content p{
+        font-size: 0.7rem;
+    }
+    .container h2 {
+        font-size: 1.9rem;
+    }
+    .content-h3{
+        font-family: 'UTMAvo' !important;
+        font-size: 0.84rem !important;
+    }
+    .content .content-h3:after {
+        width: 100px;
+    }
+    .product-student-heading{
+        display: block;
+    }
+    #news{
+        padding: 25px 0 10px 0;
+    }
+    .news-item{
+        display: flex;
+        margin: 0.5rem 0;
+    }
+    .news-img{
+        flex: 1;
+        margin: 0;
+    }
+    .news-content{
+        flex: 2;
+    }
+    .first h3{
+        font-size: 1rem !important;
+    }
+    .first__content{
+        padding: 0 2.5rem !important;
+    }
+    .first__content--heading {
+        font-size: 1.7rem !important;
+    }
+    .first__content--paragraph{
+        font-size: 0.75rem !important;
+    }
+    .first__content--img{
+        padding: 0 !important;
+    }
+    .first__content--img--bg{
+        padding: 0 !important;
+    }
+    .first__content--img--bg img {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        
+    }
+    .second__paragraph p {
+        font-size: 0.83rem !important;
+    }
+    .third{
+        padding-bottom: 0 !important;
+    }
+    .third__content h2{
+        font-size: 1.75rem !important;
+    }
+    .fourth {
+        padding-top: 0 !important;
+    }
+    .fourth__culture{
+        padding: 2rem 3rem !important;
+    }
+}

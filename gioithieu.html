@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu Robotics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/introduction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header class="w-100">
+        <div id="nav-top" class="w-100 py-2">
+            <div class="container d-flex justify-content-end align-items-center">
+                <div class="search-input">
+                    <img src="./img/search_logo.png" alt="search-logo">
+                    <input type="search" name="keyword" placeholder="tìm kiếm">
+                </div>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+        <nav class="navbar w-100 navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container w-100 d-flex justify-content-between">
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" onclick="showMenu()"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="logo">   
+                </a>
+                <div class="d-flex justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item-logo">
+                            <a class="nav-link active nav-logo" href="#">
+                                <img src="./img/logo.png" alt="logo">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item text-uppercase position-relative introduce">
+                            <div class="nav-item-content">
+                                <a class="nav-link active" href="#">Giới thiệu</a>
+                                <i class="fas fa-plus plus-item active" data-id="introduce-list"></i>
+                            </div>
+                            <ul class="introduce-list" id="introduce-list">
+                                <li class="list-group-item">
+                                    <div class="dot"></div>
+                                    <div class="introduct-item-content">
+                                        <a href="#">Về chúng tôi</a>
+                                        <span>Giới thiệu về chúng tôi</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="dot"></div>
+                                    <div class="introduct-item-content">
+                                        <a href="#">Đội ngũ</a>
+                                        <span>Độii ngũ của chúng tôi</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="dot"></div>
+                                    <div class="introduct-item-content">
+                                        <a href="#">Thành tích học viên</a>
+                                        <span>Những học viên ưu tú</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="dot"></div>
+                                    <div class="introduct-item-content">
+                                        <a href="#">Thành tích Robotic</a>
+                                        <span>Cuộc thi Robotic</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="dot"></div>
+                                    <div class="introduct-item-content">
+                                        <a href="#">Báo chí</a>
+                                        <span>Báo chỉ nói gì về chúng tôi</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="dot"></div>
+                                    <div class="introduct-item-content">
+                                        <a href="#">Tin tức Robotic</a>
+                                        <span>Tin tức Robotic</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li class="nav-item text-uppercase courses">
+                            <div class="nav-item-content">
+                                <a class="nav-link" href="#">Khóa học</a>
+                                <i class="fas fa-plus plus-item" data-id="courses-list"></i>
+                            </div>
+                            <ul class="courses-list" id="courses-list">
+                                <li class="courses-item-heading">
+                                    <div>
+                                        <h3>Danh sách khóa học</h3>
+                                        <p><span>13 khóa</span></p>
+                                    </div>
+                                </li>
+                                <li class="courses-item">
+                                    <div class="courses-item-img">
+                                        <img src="./img/course/khoahoc1.png" alt="course1">
+                                    </div> 
+                                    <div class="courses-item-content">
+                                        <a href="#">LẬP TRÌNH VÀ PHÁT TRIỂN ỨNG DỤNG</a>
+                                        <p>10-18 tuổi</p>
+                                    </div>
+                                    <div class="num">
+                                    <p>1</p>
+                                    </div>
+                                </li>
+                                <li class="courses-item">
+                                    <div class="courses-item-img">
+                                        <img src="./img/course/khoahoc2.png" alt="course2">
+                                    </div> 
+                                    <div class="courses-item-content">
+                                        <a href="#">ROBOT & ĐIỆN TỬ TỰ ĐỘNG</a>
+                                        <p>10 tuổi</p>
+                                    </div>
+                                    <div class="num">
+                                    <p>2</p>
+                                    </div>
+                                </li>
+                                <li class="courses-item">
+                                    <div class="courses-item-img">
+                                        <img src="./img/course/khoahoc3.png" alt="course3">
+                                    </div> 
+                                    <div class="courses-item-content">
+                                        <a href="#">3D & TRUYỂN THÔNG ĐA PHƯƠNG TIỆN</a>
+                                        <p>10 tháng</p>
+                                    </div>
+                                    <div class="num">
+                                    <p>3</p>
+                                    </div>
+                                </li>
+                                <li class="courses-item">
+                                    <div class="courses-item-img">
+                                        <img src="./img/course/khoahoc3.png" alt="course4">
+                                    </div> 
+                                    <div class="courses-item-content">
+                                        <a href="#">KHÓA HỌC ONLINE</a>
+                                        <p>10-18 tuổi</p>
+                                    </div>
+                                    <div class="num">
+                                    <p>4</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item text-uppercase">
+                            <a class="nav-link" href="#">Hợp tác</a>
+                        </li>
+                        <li class="nav-item text-uppercase">
+                            <a class="nav-link" href="#">Học ONLINE</a>
+                        </li>
+                        <li class="nav-item text-uppercase">
+                            <a class="nav-link" href="#">Giảng viên</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="banner">
+        <div class="container-md">
+            <h1>GIỚI THIỆU</h1>
+            <h2>TRANG CHỦ / <span>GIỚI THIỆU</span></h2>
+        </div>
+    </section>
+    <section class="introduce-page first">
+        <div class="container-md">
+            <div>
+                <h2 class="first__content--heading">Giới thiệu về <span>Robotic</span></h2>
+                <h3>trung tâm công nghệ thông tin cho bé</h3>
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="p-0 px-lg-3 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                <div class="first__content">
+                    <p class="first__content--paragraph">Có một ví dụ rất thú vị: máy phay CNC 3 trục có hệ thống điều khiển rất giống với cánh tay rô-bốt nhưng nó vẫn thường được gọi là một cái máy. Rõ ràng, việc có tay hay chân của rô-bốt đã tạo ra sự khác biệt giữa các loại máy móc. Tuy nhiên, việc có hình dáng giống người chưa đủ cơ sở để khẳng định một máy móc là rô-bốt. Rô-bốt là một loại máy có khả năng thực hiện được một công việc nào đó cho dù công việc đó có hiệu quả hay không. Vì vậy, một con rô-bốt đồ chơi trẻ em bằng nhựa dù có hình dạng giống Asimo nhưng không bao giờ là một rô-bốt.</p>
+                    <p class="first__content--paragraph">Có một ví dụ rất thú vị: máy phay CNC 3 trục có hệ thống điều khiển rất giống với cánh tay rô-bốt nhưng nó vẫn thường được gọi là một cái máy. Rõ ràng, việc có tay hay chân của rô-bốt đã tạo ra sự khác biệt giữa các loại máy móc. Tuy nhiên, việc có hình dáng giống người chưa đủ cơ sở để khẳng định một máy móc là rô-bốt. Rô-bốt là một loại máy có khả năng thực hiện được một công việc nào đó cho dù công việc đó có hiệu quả hay không. Vì vậy, một con rô-bốt đồ chơi trẻ em bằng nhựa dù có hình dạng giống Asimo nhưng không bao giờ là một rô-bốt.</p>
+                    <p class="first__content--paragraph">Có một ví dụ rất thú vị: máy phay CNC 3 trục có hệ thống điều khiển rất giống với cánh tay rô-bốt nhưng nó vẫn thường được gọi là một cái máy. Rõ ràng, việc có tay hay chân của rô-bốt đã tạo ra sự khác biệt giữa các loại máy móc. Tuy nhiên, việc có hình dáng giống người chưa đủ cơ sở để khẳng định một máy móc là rô-bốt. Rô-bốt là một loại máy có khả năng thực hiện được một công việc nào đó cho dù công việc đó có hiệu quả hay không. Vì vậy, một con rô-bốt đồ chơi trẻ em bằng nhựa dù có hình dạng giống Asimo nhưng không bao giờ là một rô-bốt.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0 pl-lg-3">
+                <div class="first__content--img">
+                    <div class="first__content--img--bg">
+                        <img src="./img/gioithieu/Website-robotic-trang-gioi-thieu.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="introduce-page second">
+        <div class="container-lg p-0 px-lg-0">
+            <div class="row m-0">
+                <div class="col-lg-4 p-0">
+                    <div class="second__image">
+                        <img src="./img/gioithieu/Website-robotic-trang-gioi-thieu2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 p-0">
+                    <div class="second__heading">
+                        <h2>TẦM NHÌN</h2>
+                        <h3>CỦA CHÚNG TÔI</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-0">
+                    <div class="second__image">
+                        <img src="./img/gioithieu/Website-robotic-trang-gioi-thieu3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-md py-5 px-lg-0">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="second__paragraph">
+                            <p>Trở thành Học viện STEAM dành cho trẻ em số một Đông Nam Á trong 3 năm về số lượng học sinh tại các điểm đào tạo và hệ thống Edutech Platform</p>
+                            <p><b>2017 :</b> Ra mắt và điều hành 2 Trung tâm công nghệ ở Hà Nội và thành phố Hồ Chí Minh, bao gồm 15-20 phòng học máy; triển khai 150+ sự kiện Hour Of Code cho hơn 5000 trẻ em cả nước.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="second__paragraph">
+                            <p><b>2018 – 2019: </b> Mở rộng lên đến 16 cơ sở toàn quốc và hợp tác mở rộng câu lạc bộ ngoại khoá tại hơn 30 trường quốc tế toàn quốc, tiếp tục triển khai các chương trình trại hè công nghệ lần 2 và lần 3, ra mắt hàng loạt chương trình học tiên tiến hợp tác với các đối tác công nghệ hàng đầu thế giới.</p>
+                            <p><b>2020:</b>  Hệ sinh thái các trung tâm đào tạo công nghệ, các điểm đào tạo, cộng đồng STEAM, hệ thống giáo dục công nghệ và ươm mầm tài năng trẻ quy mô toàn khu vực.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="introduce-page third">
+        <div class="container-md py-lg-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="third__content">
+                        <h2>Sứ mệnh của <span>Robotic</span></h2>
+                        <p class="third__content--paragraph">Có một ví dụ rất thú vị: máy phay CNC 3 trục có hệ thống điều khiển rất giống với cánh tay rô-bốt nhưng nó vẫn thường được gọi là một cái máy. Rõ ràng, việc có tay hay chân của rô-bốt đã tạo ra sự khác biệt giữa các loại máy móc. Tuy nhiên, việc có hình dáng giống người chưa đủ cơ sở để khẳng định một máy móc là rô-bốt. Rô-bốt là một loại máy có khả năng thực hiện được một công việc nào đó cho dù công việc đó có hiệu quả hay không. Vì vậy, một con rô-bốt đồ chơi trẻ em bằng nhựa dù có hình dạng giống Asimo nhưng không bao giờ là một rô-bốt.</p>
+                        <p class="third__content--paragraph">Có một ví dụ rất thú vị: máy phay CNC 3 trục có hệ thống điều khiển rất giống với cánh tay rô-bốt nhưng nó vẫn thường được gọi là một cái máy. Rõ ràng, việc có tay hay chân của rô-bốt đã tạo ra sự khác biệt giữa các loại máy móc. Tuy nhiên, việc có hình dáng giống người chưa đủ cơ sở để khẳng định một máy móc là rô-bốt. Rô-bốt là một loại máy có khả năng thực hiện được một công việc nào đó cho dù công việc đó có hiệu quả hay không.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="third__content">
+                        <h2>Giá trị cốt lõi <span>Robotic</span></h2>
+                        <p class="third__content--paragraph">Có một ví dụ rất thú vị: máy phay CNC 3 trục có hệ thống điều khiển rất giống với cánh tay rô-bốt nhưng nó vẫn thường được gọi là một cái máy. Rõ ràng, việc có tay hay chân của rô-bốt đã tạo ra sự khác biệt giữa các loại máy móc. Tuy nhiên, việc có hình dáng giống người chưa đủ cơ sở để khẳng định một máy móc là rô-bốt. Rô-bốt là một loại máy có khả năng thực hiện được một công việc nào đó cho dù công việc đó có hiệu quả hay không. Vì vậy, một con rô-bốt đồ chơi trẻ em bằng nhựa dù có hình dạng giống Asimo nhưng không bao giờ là một rô-bốt.</p>
+                        <p class="third__content--paragraph">Có một ví dụ rất thú vị: máy phay CNC 3 trục có hệ thống điều khiển rất giống với cánh tay rô-bốt nhưng nó vẫn thường được gọi là một cái máy. Rõ ràng, việc có tay hay chân của rô-bốt đã tạo ra sự khác biệt giữa các loại máy móc. Tuy nhiên, việc có hình dáng giống người chưa đủ cơ sở để khẳng định một máy móc là rô-bốt. Rô-bốt là một loại máy có khả năng thực hiện được một công việc nào đó cho dù công việc đó có hiệu quả hay không.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-12 p-0 px-lg-3">
+                    <div class="third__image">
+                        <img src="./img/gioithieu/Website-robotic-trang-gioi-thieu4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="introduce-page fourth">
+        <div class="row">
+            <div class="col-lg-6 px-lg-3 p-0">
+                <div class="fourth__culture">
+                    <h2>Văn hóa <span>Robotic</span></h2>
+                    <p class="fourth__culture--paragraph">Văn hoá của học viện STEAM TEKY là một chuỗi giá trị được gói gọn trong 6 chữ cái SPIRIT</p>
+                    <ul>
+                        <li>
+                            <p><img src="./img/gioithieu/icon-star.png" alt="">
+                            S (<span>S</span>pirit of learning & <span>S</span>elf-learning) – Tinh thần học tập và khả năng tự học</p>
+                        </li>
+                        <li>
+                            <p><img src="./img/gioithieu/icon-star.png" alt="">
+                            P (<span>P</span>ro-active) – Chủ động và lăn xả trong công việc</p>
+                        </li>
+                        <li>
+                            <p><img src="./img/gioithieu/icon-star.png" alt="">
+                            I (Constructively <span>I</span>nteractive) – Tương tác, thông tin 2 chiều trên cơ sở đóng góp xây dựng</p>
+                        </li>
+                        <li>
+                            <p><img src="./img/gioithieu/icon-star.png" alt="">
+                            R (<span>R</span>esponsible) – Nhận thức được mình phải làm, thực thi công việc có ý thức để đảm bảo một kết quả phải xảy ra trong tương lai một cách chính xác và kịp thời</p>
+                        </li>
+                        <li>
+                            <p><img src="./img/gioithieu/icon-star.png" alt="">
+                            I (<span>I</span>novation) – Tư duy cởi mở, tìm tòi đổi mới, cải tiến sáng tạo trong công việc với mục đích cụ thể nhằm nâng cao hiệu suất</p>
+                        </li>
+                        <li>
+                            <p><img src="./img/gioithieu/icon-star.png" alt="">
+                            T (<span>T</span>eamwork) – Tinh thần làm việc nhóm</p>
+                        </li>
+                    </ul>
+                    <p class="fourth__culture--paragraph">Đội ngũ giáo viên của TEKY là những người ưu tú nhất trong ngành công nghệ thông tin, có khả năng truyền cảm hứng tuyệt vời và ươm mầm tài năng trẻ. Các thầy cô cũng đã có kinh nghiệm lâu năm trong việc giúp hình thành và phát triển sức sáng tạo, cũng như rèn luyện các kỹ năng khác ở trẻ nhỏ. TEKY mang đến cơ hội phát triển toàn diện cho trẻ trong môi trường học tập hiện đại bậc nhất. Không chỉ say mê sáng tạo, học sinh còn được rèn luyện sự tự tin khi chia sẻ ý tưởng tạo nên sản phẩm với thầy cô và các bạn.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="fourth__image">
+                    <img src="./img/gioithieu/cultures.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="introduce-page firth">
+        <img src="./img/gioithieu/gioi-thieu-6.png" alt="">
+    </section>
+
+    <section id="modal">
+    </section>
+    <footer class="w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="item">
+                        <div class="footer-logo">
+                            <img src="./img/logo.png" alt="robotics">
+                        </div>
+                        <div class="registry-message">
+                            <p>Đăng ký nhận tin</p>
+                            <img src="./img/register_message.png" alt="register_message">
+                        </div>
+                        <div class="links-website">
+                            <div class="choose-links">
+                                <h3>Chọn liên kết đến website</h3>
+                                <i class="fas fa-sort-down"></i>
+                            </div>
+                            <div class="links-search">
+                                <input type="text">
+                                <ul>
+                                    <li><span>Robotic</span></li>
+                                    <li><span>Khóa học Front end</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <h5>TRỤ SỞ CHÍNH</h5>
+                        <div class="headquater-content">
+                            <div class="headquater-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Tầng 6, 25 Vũ Ngọc Phan, Láng Hạ, Đống Đa, Hà Nội</p>
+                            </div>
+                            <div class="headquater-item">
+                                <i class="fas fa-phone"></i>
+                                <p>0962165244</p>
+                            </div>
+                            <div class="headquater-item">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <p>khuatchung1012@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="item">
+                                <h5>SITE MAP</h5>
+                                <div class="site-map-list">
+                                    <ul>
+                                        <li><a href="#">Giới thiệu</a></li>
+                                        <li><a href="#">Khóa học</a></li>
+                                        <li><a href="#">Hợp tác</a></li>
+                                        <li><a href="#">Học Online</a></li>
+                                        <li><a href="#">Giảng viên</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item social">
+                                <div class="bo-cong-thuong">
+                                    <img src="./img/logo_bo_cong_thuong.png" alt="logo_bo_cong_thuong">
+                                </div>
+                                <div class="logo-social">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram-square"></i>
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                                <p>Copyright 2020 ROBOTIC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="./script/function.js"></script>
+    <script src="./script/header.js"></script>
+</body>
+</html>
